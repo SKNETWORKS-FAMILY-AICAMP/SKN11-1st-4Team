@@ -3,7 +3,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import pandas as pd
 import re
-import time
 
 # DRIVER_PATH = './chromedriver-linux64/chromedriver' # to be fixed - relative path
 
@@ -21,7 +20,6 @@ def get_elec_charge_info():
 
     url = 'https://chargeinfo.ksga.org/front/statistics/charger'
     driver.get(url)
-    time.sleep(1)
 
 
     # 지역명 받아오기
@@ -44,14 +42,9 @@ def get_elec_charge_info():
             row = [x for x in row.split('\n') if x.strip()]  # 빈 문자열 제거
             row_frame = pd.DataFrame({year: row}, index=regions)    # DataFrame으로 변환
             df = pd.concat([df, row_frame], axis=1)
-
-    # print(df)
             
     driver.quit()
     return df
-
-
-get_elec_charge_info()
 
 
 """
