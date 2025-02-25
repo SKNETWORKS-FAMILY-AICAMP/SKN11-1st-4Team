@@ -1,4 +1,7 @@
 # SKN011-4th-1Team
 
-## Team Introduction
+## 1. Team Members
 ### 팀명 : ♨️남탕♨️
+
+|Name|Personal Image|Github Link|
+|---|---|---|
