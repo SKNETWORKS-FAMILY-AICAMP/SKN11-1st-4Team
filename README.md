@@ -24,7 +24,6 @@
    전기, 수소 충전소의 인프라가 얼마나 구축되어있는지 설치 현황을 지도에 시각화
 
 ## 3. 기술 스택
-
 <p align="center">
   <img src="https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white">
   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
@@ -33,7 +32,28 @@
   <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white">
 </p>
 <p align="center">
-  <img src="h을 수집한다. 시스템은 제조사와 충전기 관련 FAQ 데이터를 수집한다. 시스템은 자동으로 데이터를 업데이트하고 관리한다.|02/25|
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
+  <img src="https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white">
+  <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
+  <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
+<!--   <img src="https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white"> -->
+</p>
+
+<br/><br/>
+
+## 4. WBS
+
+
+
+
+## 5. 요구사항 명세서
+
+|**RQ-ID**|회원명|요구사항명|요구사항 내용|날짜|
+|------|---|---|---|---|
+|RQ-01|공통|DB 수집|시스템은 국내 5개사의 자동차별 월별 판매량 데이터을 수집한다. 시스템은 제조사와 충전기 관련 FAQ 데이터를 수집한다. 시스템은 자동으로 데이터를 업데이트하고 관리한다.|02/25|
 |RQ-02|공통|DB 서버 구축|시스템은 수집된 데이터를 자동으로 DB 서버에 등록한다.|02/25|
 |RQ-03|공통|Streamlit - 페이지|Streamlit 화면 구성 : 홈 화면, 차량등록현황, 충전소 현황 지도, FAQ 페이지를 구축한다. |02/25|
 |RQ-04|공통|Streamlit - 페이지|홈 화면 구축 : 시스템은 프로젝트 개요 및 간략화 된 정보를 제공한다.|02/25|
@@ -64,4 +84,3 @@
 |이선호|---|
 |정민호|---|
 |김정원|---|
-
