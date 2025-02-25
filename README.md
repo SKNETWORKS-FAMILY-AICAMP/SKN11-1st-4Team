@@ -9,7 +9,7 @@
 |이상준|---|haides1998@gmail.com|
 |이선호|---|dkdlatjsh@gmail.com|
 |정민호|---|[@Minor1862](https://github.com/Minor1862)|
-|김정원|---|@Kimjeongwon12|
+|김정원|---|[@Kimjeongwon12](https://github.com/Kimjeongwon12)|
 
 ## 2. 프로젝트 개요
 ### 프로젝트 명
@@ -29,7 +29,6 @@
   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=vscode&logoColor=white">
-  <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white">
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
@@ -38,6 +37,7 @@
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
+  <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white">
   <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
 <!--   <img src="https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white"> -->
 </p>
@@ -53,17 +53,17 @@
 
 |**RQ-ID**|회원명|요구사항명|요구사항 내용|날짜|
 |------|---|---|---|---|
-|RQ-01|공통|DB 수집|시스템은 국내 5개사의 자동차별 월별 판매량 데이터을 수집한다. 시스템은 제조사와 충전기 관련 FAQ 데이터를 수집한다. 시스템은 자동으로 데이터를 업데이트하고 관리한다.|02/25|
+|RQ-01|공통|DB 수집|시스템은 전국 자동차 등록 현황과 친환경 자동차 등록 현황을 수집한다. 시스템은 제조사와 충전기 관련 FAQ 데이터를 수집한다. 시스템은 자동으로 데이터를 업데이트하고 관리한다.|02/25|
 |RQ-02|공통|DB 서버 구축|시스템은 수집된 데이터를 자동으로 DB 서버에 등록한다.|02/25|
 |RQ-03|공통|Streamlit - 페이지|Streamlit 화면 구성 : 홈 화면, 차량등록현황, 충전소 현황 지도, FAQ 페이지를 구축한다. |02/25|
 |RQ-04|공통|Streamlit - 페이지|홈 화면 구축 : 시스템은 프로젝트 개요 및 간략화 된 정보를 제공한다.|02/25|
-|RQ-05|공통|Streamlit - 페이지|등록현황 화면 구축 : 시스템은 자동차 등록현환 데이터를 불러와서 친환경 자동차에 대한 내용을 시각화 한다.|02/25|
+|RQ-05|공통|Streamlit - 페이지|등록현황 화면 구축 : 시스템은 자동차 등록현황 데이터를 불러와서 친환경 자동차에 대한 내용을 시각화 한다.|02/25|
 |RQ-06|공통|Streamlit - 페이지|차량수요 화면 구축 : 시스템은 프로젝트 개요 및 간략화 된 정보를 제공한다.|02/25|
 |RQ-07|공통|Streamlit - 페이지|메뉴바 생성 : 사용자는 좌측의 메뉴바를 통해 각 페이지에 접근할 수 있다.|02/25|
-|RQ-08|공통|등록현황 시각화|시스템은 지도 기반 지역별 등록 현황 및 막대 그래프를 통해 연료별 등록현을 제공한다.|02/25|
+|RQ-08|공통|등록현황 시각화|시스템은 지도 기반 지역별 등록 현황 및 막대 그래프를 통해 연료별 등록현황을 제공한다.|02/25|
 |RQ-09|공통|수요현황 시각화|시스템은 월별 수요 데이터에 대한 파이 그래프를 통해 제공한다.|02/25|
 |RQ-10|공통|Filter 기능|사용자는 키워드 검색을 통해 FAQ에 접근할 수 있다.  사용자는 브랜드 선택을 통해 FAQ에 접근할 수 있다. 사용자는 카테고리 선택을 통해 FAQ에 접근할 수 있다.|02/25|
-|RQ-11|공통|통합 FAQ 기능|시스템은 국내 5개사의 통합 데이터를 제공한다.|02/25|
+|RQ-11|공통|통합 FAQ 기능|시스템은 제조사와 충전서비스 제공회사의 faq를 제공한다.|02/25|
 
 ## 6. ERD
 
