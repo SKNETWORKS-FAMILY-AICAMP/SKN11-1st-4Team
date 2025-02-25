@@ -8,7 +8,7 @@
 |배정수|---|bail4877@gmail.com|
 |이상준|---|haides1998@gmail.com|
 |이선호|---|dkdlatjsh@gmail.com|
-|정민호|---|car1358@naver.com|
+|정민호|---|@Minor1862|
 |김정원|---|@Kimjeongwon12|
 
 ## 2. 프로젝트 개요
