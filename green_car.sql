@@ -18,6 +18,8 @@ CREATE TABLE region(
     region_name VARCHAR(255) NOT NULL
 )ENGINE=INNODB;
 
+-- files 폴더에 있는 eco_registration에 있는 서울 부산 대구... 제주 순으로 region_key가 1부터 17까지 부여됨
+
 CREATE TABLE regional_charger_count(
     region_key INT,
     charger_key INT,
