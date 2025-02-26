@@ -16,7 +16,7 @@ def run():
     
     # 데이터 로드
     file_paths = ["ev_or_faq_data.csv", "kia_faq_data.csv", "chevrolet_faq_data.csv"]  # CSV 파일 경로 리스트
-    file_paths = [os.path.join(os.path.relpath('../data/FAQ', file_path) for file_path in file_paths] 
+    file_paths = [os.path.join(os.path.relpath('../data/FAQ', file_path)) for file_path in file_paths] 
     try:
         df = load_data(file_paths)
         st.success("FAQ 데이터 업데이트 완료!")
