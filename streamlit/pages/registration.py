@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 # import plotly.express as px
 
-eco_car_registration_csv = '../data/eco_car_registration.csv'
+eco_car_registration_csv = './data/eco_car_registration.csv'
 
 def run():
     st.title("📊 등록 현황")
