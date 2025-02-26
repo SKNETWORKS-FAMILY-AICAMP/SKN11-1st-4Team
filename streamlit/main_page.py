@@ -14,7 +14,7 @@ import pages.home as home
 st.sidebar.title("📂 MENU")
 menu = st.sidebar.radio(
     "페이지를 선택하세요:",
-    ["🏠 Home", "📊 친환경 자동차 등록 현황", "💧 충전소 지도", "❓ FAQ"],
+    ["🏠 Home", "📊 친환경 자동차 등록 현황", "💧 전국 충전소 설치 현황", "❓ FAQ"],
     key="main_menu"
 )
 
@@ -31,7 +31,7 @@ if menu == "🏠 Home":
     home.run()
 elif menu == "📊 친환경 자동차 등록 현황":
     registration.run()
-elif menu == "💧 충전소 지도":
+elif menu == "💧 전국 충전소 설치 현황":
     charging_map.run()
 elif menu == "❓ FAQ":
     faq.run()
