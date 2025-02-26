@@ -113,7 +113,7 @@ def process_csv_and_insert(csv_file, connection):
         reg_key = region_mapping[region_name]
         insert_regional_car_count(connection, reg_key, fuel, count, date)
         print(f"Inserted row: Region: {region_name}, Region Key: {reg_key}, Fuel: {fuel}, Count: {count}, Date: {date}")
-
+"""
 if __name__ == "__main__":
     csv_file = "../../data/eco_car_registration.csv"  # CSV 파일 경로를 실제 경로로 수정하세요.
     
@@ -130,3 +130,4 @@ if __name__ == "__main__":
         process_csv_and_insert(csv_file, connection)
     finally:
         connection.close()
+"""
