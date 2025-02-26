@@ -3,8 +3,8 @@
 ## 1. Team Members
 ### 팀명 : ♨️남탕♨️
 
-|Name|Personal Image|Github Link|
-|---|---|---|
+|Name|Github Link|
+|---|---|
 |배정수|bail4877@gmail.com|
 |이상준|haides1998@gmail.com|
 |이선호|dkdlatjsh@gmail.com|
