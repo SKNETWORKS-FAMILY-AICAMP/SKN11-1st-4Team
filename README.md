@@ -91,7 +91,8 @@
 ## 7. 수행결과(테스트/시연 페이지)
 
 
-
+충전소 설치 현황
+![Image](https://github.com/user-attachments/assets/93820f69-9eb5-4428-a7ef-3749186f1dab)
 
 ## 8. 회고
 |Name| 한 줄 |
