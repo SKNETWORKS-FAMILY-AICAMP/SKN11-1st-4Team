@@ -41,4 +41,3 @@ CREATE TABLE regional_eco_car_count(
     FOREIGN KEY(region_key) REFERENCES region(region_key)
 )ENGINE=INNODB;
 
-
