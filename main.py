@@ -1,14 +1,9 @@
 import mysql.connect as mysql
 import pandas as pd
 
-def run_db_script():
+def run_db_script(connection):
   # run database script and insert initial values
-  connection = mysql.connect(
-    host = 'localhost',
-    user = 'root',
-    password = '', # 실행하는 pc에 따라
-    database = 'mysql'
-  )
+  
   cursor = connection.cursor()
   
   with open('./green_car.sql', 'r') as f:
@@ -36,18 +31,35 @@ def run_db_script():
     i+=1
   
   connection.commit()
+  cursor.close()
   return
 
 
-def load_data_to_db():
+def load_data_to_db(connection):
+  from eco_car_DB import populate_region_table, process_csv_and_insert
+
+  # 친환경자동차 data load
+  eco_car_csv = './data/eco_car_registration.csv'
+  populate_region_table(connection)
+  process_csv_and_insert(eco_car_csv, connection)
+  
+
+  
   return
 
 def render_streamlit():
   return
 
 if __name__ == "__main__":
-  run_db_script()
-  load_data_to_db()
+  connection = mysql.connect(
+    host = 'localhost',
+    user = 'root',
+    password = '', # 실행하는 pc에 따라
+    database = 'mysql'
+  )
+  
+  run_db_script(connection)
+  load_data_to_db(connection)
   render_streamlit()
 
   exit()
