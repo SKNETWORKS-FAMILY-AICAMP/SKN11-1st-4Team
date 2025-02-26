@@ -79,7 +79,7 @@
 |RQ-11|공통|통합 FAQ 기능|시스템은 제조사와 충전서비스 제공회사의 faq를 제공한다.|02/25|
 
 ## 6. ERD
-
+![Image](https://github.com/user-attachments/assets/ea1ac281-cda9-4330-ba19-94652fe3f07f)
 
 
 
