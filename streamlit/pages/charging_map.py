@@ -5,7 +5,7 @@ import plotly.express as px
 def run():
 
     # CSV 파일 로드
-    csv_file_path = "C:\\Users\\Playdata\\Desktop\\elec_car_chargers - Sheet1.csv"  # 실제 경로로 변경 필요
+    csv_file_path = "../data/elec_car_chargers - Sheet1.csv"  # 실제 경로로 변경 필요
     df = pd.read_csv(csv_file_path, encoding="utf-8")
 
     # 올바른 헤더 설정 및 데이터 정리 (순서 조정)
