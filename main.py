@@ -17,7 +17,7 @@ def run_db_script(connection):
     try:
       if command.strip() != '':
         cursor.execute(command)
-    except Exception e:
+    except Exception as e:
       print(f'Command skipped: {command}')
       print(e)
 
