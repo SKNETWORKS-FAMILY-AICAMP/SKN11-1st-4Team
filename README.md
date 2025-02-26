@@ -90,6 +90,8 @@
 
 ## 7. 수행결과(테스트/시연 페이지)
 
+|FAQ 시연|
+![Image](https://github.com/user-attachments/assets/d2ebdd13-efc2-49f7-8f9e-b3ac64db80b5)
 
 충전소 설치 현황
 ![Image](https://github.com/user-attachments/assets/93820f69-9eb5-4428-a7ef-3749186f1dab)
