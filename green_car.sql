@@ -32,7 +32,7 @@ CREATE TABLE regional_charger_count(
 
 CREATE TABLE regional_car_count(
     region_key INT,
-    fuel_type VARCHAR(255) NOT NULL, -- elec, hydro, others
+    fuel_type VARCHAR(255) NOT NULL, -- elec, hydro, hybrid from eco-car-registration // others from 지표서비스
     car_count INT,
     car_count_date DATE,
     PRIMARY KEY(region_key, fuel_type, car_count_date),
