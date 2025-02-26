@@ -1,7 +1,7 @@
 import mysql.connect as mysql
 import pandas as pd
 import re, sys
-from streamlit.web import cli as strcli
+from streamlit.web import cli as webcli
 
 def run_db_script(connection):
   # run database script and insert initial values
@@ -53,7 +53,8 @@ def load_data_to_db(connection):
   return
 
 def render_streamlit():
-  
+  sys.argv = ['streamlit', 'run', './streamlit/main_page.py']
+  sys.exit(webcli.main())
   return
 
 if __name__ == "__main__":
@@ -68,4 +69,3 @@ if __name__ == "__main__":
   load_data_to_db(connection)
   render_streamlit()
 
-  exit()
