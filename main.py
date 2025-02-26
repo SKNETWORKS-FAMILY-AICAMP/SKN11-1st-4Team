@@ -39,7 +39,7 @@ def run_db_script():
   return
 
 
-def load_databases():
+def load_data_to_db():
   return
 
 def render_streamlit():
@@ -47,7 +47,7 @@ def render_streamlit():
 
 if __name__ == "__main__":
   run_db_script()
-  load_databases()
+  load_data_to_db()
   render_streamlit()
 
   exit()
