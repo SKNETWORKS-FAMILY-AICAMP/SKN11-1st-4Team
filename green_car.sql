@@ -7,6 +7,9 @@ DROP TABLE IF EXISTS regional_charger_count;
 DROP TABLE IF EXISTS regional_entire_car_count;
 DROP TABLE IF EXISTS regional_eco_car_count;
 
+create user SKN11team4@'%' identified by 'SKN11team4';
+grant all privileges on green_car.* to SKN11team4@'%';
+
 CREATE TABLE charger_type (
     charger_key INT PRIMARY KEY AUTO_INCREMENT,
     fuel_type VARCHAR(255) NOT NULL,
