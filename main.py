@@ -38,12 +38,15 @@ def run_db_script(connection):
 def load_data_to_db(connection):
   from eco_car_DB import populate_region_table, process_csv_and_insert
 
-  # 친환경자동차 data load
+  # 친환경자동차 data load into db
+  
   eco_car_csv = './data/eco_car_registration.csv'
   populate_region_table(connection)
   process_csv_and_insert(eco_car_csv, connection)
   
+  # 전체 자동차 data load
 
+  # 충전소 data load
   
   return
 
