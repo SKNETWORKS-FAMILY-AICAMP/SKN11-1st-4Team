@@ -90,9 +90,6 @@
 
 ## 7. 수행결과(테스트/시연 페이지)
 
-|FAQ 시연|
-![Image](https://github.com/user-attachments/assets/d2ebdd13-efc2-49f7-8f9e-b3ac64db80b5)
-
 충전소 설치 현황
 ![Image](https://github.com/user-attachments/assets/93820f69-9eb5-4428-a7ef-3749186f1dab)
 
@@ -100,6 +97,9 @@
 
 ![Image](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN011-1st-4Team/blob/e39b2ba05892dc3cd43ca423778f5c60d0385bc8/screenshot1.png)
 ![Image](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN011-1st-4Team/blob/e014dfad8d84f87ee295a83dd5dcd80f82e943dc/screenshot2.png)
+
+|FAQ 시연|
+![Image](https://github.com/user-attachments/assets/d2ebdd13-efc2-49f7-8f9e-b3ac64db80b5)
 
 ## 8. 회고
 |Name| 한 줄 |
