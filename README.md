@@ -96,6 +96,11 @@
 충전소 설치 현황
 ![Image](https://github.com/user-attachments/assets/93820f69-9eb5-4428-a7ef-3749186f1dab)
 
+친환경 차량 등록 현황
+
+![Image]()
+![Image]()
+
 ## 8. 회고
 |Name| 한 줄 |
 |---|---|
