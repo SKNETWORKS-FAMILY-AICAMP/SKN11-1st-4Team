@@ -1,7 +1,11 @@
 CREATE DATABASE green_car;
 USE green_car;
 
-
+DROP TABLE IF EXISTS charger_type;
+DROP TABLE IF EXISTS region;
+DROP TABLE IF EXISTS regional_charger_count;
+DROP TABLE IF EXISTS regional_entire_car_count;
+DROP TABLE IF EXISTS regional_eco_car_count;
 
 CREATE TABLE charger_type (
     charger_key INT PRIMARY KEY AUTO_INCREMENT,
