@@ -1,4 +1,4 @@
-import mysql.connect as mysql
+import mysql.connector as mysql
 import pandas as pd
 import re, sys
 from streamlit.web import cli as webcli
