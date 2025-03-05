@@ -4,7 +4,9 @@ import re, sys
 from streamlit import cli as strcli
 
 def run_db_script(connection):
-  # run database script and insert initial values
+  """
+  DB 초기 설정이 담긴 script (green_car.sql)를 실행시킴.
+  """
   
   cursor = connection.cursor()
   
@@ -28,7 +30,7 @@ def run_db_script(connection):
   
   query = 'INSERT INTO region VALUES (%s, %s)'
   i = 1
-  for region in df.iloc[2:19, :1].iloc[:, 0]:  # bad
+  for region in df.iloc[2:19, :1].iloc[:, 0]:  # bad implementation; need extra preprocessing method to wrap this 
     cursor.execute(query, (i, region))
     i+=1
   
@@ -38,34 +40,50 @@ def run_db_script(connection):
 
 
 def load_data_to_db(connection):
+  """
+  데이터들을 DB에 로드함.
+  """
   from eco_car_DB import populate_region_table, process_csv_and_insert
 
-  # 친환경자동차 data load into db
+  # 친환경자동차 data load
   
   eco_car_csv = './data/eco_car_registration.csv'
   populate_region_table(connection)
   process_csv_and_insert(eco_car_csv, connection)
   
-  # 전체 자동차 data load
+  # TODO
+  # 전체 자동차 등록 현황 data load
 
-  # 충전소 data load
+  # TODO
+  # 충전소 현황 data load
   
   return
 
 def render_streamlit():
+  """
+  streamlit을 실행함 - terminal이 아니라 python 내부에서 실행
+  """
+  
   sys.argv = ['streamlit', 'run', './streamlit/main_page.py']
   sys.exit(strcli.main())
   return
 
-if __name__ == "__main__":
+
+
+def main():
   connection = mysql.connect(
     host = 'localhost',
     user = 'root',
     password = '', # 실행하는 pc에 따라
     database = 'mysql'
   )
-  
+
   run_db_script(connection)
   load_data_to_db(connection)
-  render_streamlit()
+  render_streamlit_page()
 
+  connection.close()
+  
+
+if __name__ == "__main__":
+  main()
