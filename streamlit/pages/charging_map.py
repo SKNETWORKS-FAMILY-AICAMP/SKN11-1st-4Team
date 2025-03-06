@@ -4,6 +4,12 @@ import plotly.express as px
 
 def run():
 
+    # TODO !!!
+    # 1. Create DataFrame FROM MYSQL, not directly from csv!!
+    # 2. Use an actual map to visualize the number of charging stations
+    # one may use google maps, kakao maps, etc... to render a chart
+    
+
     # CSV 파일 로드
     csv_file_path = "./data/elec_car_chargers - Sheet1.csv"  # 실제 경로로 변경 필요
     df = pd.read_csv(csv_file_path, encoding="utf-8")
