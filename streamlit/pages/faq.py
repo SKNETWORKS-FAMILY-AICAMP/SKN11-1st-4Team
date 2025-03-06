@@ -13,6 +13,11 @@ def load_data(file_paths):
 
 def run():
     st.title("❓ 자주 묻는 질문 FAQ")
+
+    # TODO !!!
+    # Create DataFrame FROM MYSQL, not from csv
+    # Visualization is ok
+
     
     # 데이터 로드
     file_paths = ["ev_or_faq_data.csv", "kia_faq_data.csv", "chevrolet_faq_data.csv"]  # CSV 파일 경로 리스트
@@ -38,6 +43,3 @@ def run():
         st.write("### 답변 내용 : ")
         value_text = "\n".join(values.astype(str).to_list())
         st.text_area("answer", value_text, height=200)
-
-if __name__ == "__main__":
-    run()
