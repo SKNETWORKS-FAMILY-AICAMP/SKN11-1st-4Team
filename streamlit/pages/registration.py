@@ -1,7 +1,5 @@
-import pymysql
 import pandas as pd
 import streamlit as st
-# import plotly.express as px
 
 eco_car_registration_csv = './data/eco_car_registration.csv'
 
@@ -19,19 +17,10 @@ def run():
     # 텍스트 강조 및 정보 표시
     st.info("💡 **이 분석은 2024년 기준으로 지역별, 연료별 자동차 등록 현황을 시각화한 것입니다.**")
 
-    df = pd.read_csv(eco_car_registration_csv)
-    df = df.rename(index=lambda x: REGION_LIST[x-1])
-    df = df.iloc[:, 2:]
+    # TODO : Create DataFrame using data from DB
 
-    for col in df.columns[1:]:
-        if df[col][0] == '전기':
-            fig = px.bar(df, x=df.index, y=col, title=f'{col[:4]}년 전기 자동차 등록 현황')
-            st.plotly_chart(fig)
+    # TODO : Draw Meaningful Charts from DataFrame
 
-        elif df[col][0] == '수소':
-            fig = px.bar(df, x=df.index, y=col, title=f'{col[:4]}년 수소 자동차 등록 현황')
-            st.plotly_chart(fig)
+    # TODO : Create Page Layout
 
-        elif df[col][0] == '하이브리드':
-            fig = px.bar(df, x=df.index, y=col, title=f'{col[:4]}년 하이브리드 자동차 등록 현황')
-            st.plotly_chart(fig)
+    
