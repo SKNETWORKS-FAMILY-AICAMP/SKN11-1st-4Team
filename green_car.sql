@@ -1,4 +1,4 @@
-CREATE DATABASE green_car;
+CREATE DATABASE IF NOT EXISTS green_car;
 USE green_car;
 
 DROP TABLE IF EXISTS charger_type;
