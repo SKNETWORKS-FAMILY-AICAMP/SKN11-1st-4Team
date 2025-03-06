@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS green_car;
-USE green_car;
+CREATE DATABASE IF NOT EXISTS $database_name;
+USE $database_name;
 
 DROP TABLE IF EXISTS charger_type;
 DROP TABLE IF EXISTS region;
