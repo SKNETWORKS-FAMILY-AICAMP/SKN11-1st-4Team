@@ -60,6 +60,7 @@ def main(args):
 
     # create database using sql script
     run_sql_script(init_connection, args.database_name)
+    init_connection.close()
 
     # connect to created database
     connection = mysql.connect(
