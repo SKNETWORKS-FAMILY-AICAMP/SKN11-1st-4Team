@@ -32,7 +32,7 @@ def load_data_to_db(connection):
 
     cursor = connection.cursor()
 
-    # TODO: load entire car registration data to MYSQL
+    # TODO: load entire car registration data to MYSQL - 배정수
     # 새로운 파이썬 파일을 만들어서
     # 해당 파일 안에서 전체 자동차 현황을 DB에 삽입해주세요
     # csv파일을 읽는 것도 여기서 하기 때문에
@@ -45,7 +45,9 @@ def load_data_to_db(connection):
     populate_region_table(connection)
     process_csv_and_insert(eco_car_csv, connection)
 
-    # TODO: load eco car charging station data to MYSQL
+    # TODO: load eco car charging station data to MYSQL - 정민호
+    # 위와 동일하게 새로운 파이썬 파일을 만들어서
+    # 해당 파일 안에서 충전소 현황을 DB에 삽입해주세요
 
     # TODO: load FAQ data to MYSQL
 
