@@ -35,7 +35,7 @@ def load_data_to_db(connection):
     # 새로운 파이썬 파일을 만들어서
     # 해당 파일 안에서 전체 자동차 현황을 DB에 삽입해주세요
     # csv파일을 읽는 것도 여기서 하기 때문에
-    # 함수를 작성할때에는 dataframe(or csv) 파일을 인자로 받았다고 가정하고 작성하면 됩니다.
+    # 함수를 작성할때에는 전처리가 안 된 csv 파일을 인자로 받았다고 가정하고 작성하면 됩니다.
 
     # load eco car registration data to MYSQL
     from eco_car_DB import populate_region_table, process_csv_and_insert
