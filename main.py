@@ -70,7 +70,8 @@ def main(args):
         host=args.host,
         user=args.user,
         password=args.password,
-        database=args.database_name
+        database=args.database_name,
+        allow_local_infile=True,
     )
 
     # load datas to created database
@@ -78,7 +79,7 @@ def main(args):
     connection.close()
 
     # render pages using streamlit
-    cli.main_run(['./streamlit/main_page.py', '--server.port', str(args.streamlit_port)])
+    cli.main_run(['./streamlit/main_page.py', '--streamlit.port', str(args.streamlit_port)])
     return
 
 
