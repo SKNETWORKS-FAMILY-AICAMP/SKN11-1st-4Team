@@ -9,6 +9,7 @@ def run_sql_script(connection, user_database_name):
 
     with open('./eco_car.sql', 'r') as f:
         sql = f.read()
+    f.close()
 
     commands = sql.split(';')
     for command in commands:
