@@ -41,9 +41,9 @@ def load_data_to_db(connection):
     # load eco car registration data to MYSQL
     from eco_car_DB import populate_region_table, process_csv_and_insert
 
-    eco_car_csv = pd.read_csv('/data/eco_car_registration.csv')
+    eco_car_csv_dir = './data/eco_car_registration.csv'
     populate_region_table(connection)
-    process_csv_and_insert(eco_car_csv, connection)
+    process_csv_and_insert(eco_car_csv_dir, connection)
 
     # TODO: load eco car charging station data to MYSQL - 정민호
     # 위와 동일하게 새로운 파이썬 파일을 만들어서
