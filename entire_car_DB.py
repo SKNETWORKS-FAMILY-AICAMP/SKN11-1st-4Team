@@ -51,3 +51,5 @@ def insert_df_into_db(connection, file_path):
 
     df_dict = process_xlsx_to_df(file_path)
     cursor = connection.cursor()
+
+    # TODO: Insert into db - after REGION_LIST is updated
